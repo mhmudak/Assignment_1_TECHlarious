@@ -12,7 +12,7 @@
     </style>
 </head>
 <body style="background-color: lightgrey;">
-    <div style="border-bottom: 1px solid grey; padding-bottom: 10px;">
+    <div style="border-bottom: 1px solid grey; padding-bottom: 10px; width: 1003px;">
         <span style="display:inline-block;">
             <label for="title"> Title: <span style="color: red;">*</span></label><br>                               
             <input type="text" id="title" name="title" value="Astronomy for Poets" style="width: 350px;">
@@ -61,7 +61,7 @@
                     <span style="display: inline-block; width: 75px; padding-right:20px;"> Consent required </span>
                 </span>
                 <span style="display:inline-block;">
-                    <input type="" id="num2" name="num2" style="width: 33px; background-color: lightgray; border-color: transparent;">
+                    <input type="" id="num2" name="num2" style="width: 33px; background-color: lightgray; border-color: transparent;" disabled>
                 </span>
                 <span style="display:inline-block;">
                     <label for="rationale"> Rationale: </label><br>                               
@@ -82,7 +82,7 @@
                     <input type="text" id="rationale" name="rationale" style="width: 400px;">
                 </span><br>
                 <span style="display:inline-block;">
-                    <input type="" id="num2" name="num2" style="width: 154px; background-color: lightgray; border-color: transparent;">
+                    <input type="" id="num2" name="num2" style="width: 154px; background-color: lightgray; border-color: transparent;" disabled>
                 </span>
                 <span>
                     <label for="rationale"> How to handle over-enrollment: </label><br>                               
@@ -95,7 +95,7 @@
                     <span style="display: inline-block; width: 75px; padding-right:20px;"> Prerequisites </span>
                 </span>
                 <span style="display:inline-block;">
-                    <input type="" id="num2" name="num2" style="width: 33px; background-color: lightgray; border-color: transparent;">
+                    <input type="" id="num2" name="num2" style="width: 33px; background-color: lightgray; border-color: transparent;" disabled>
                 </span>
                 <span style="display:inline-block;">
                     <label for="rationale"> Rationale: </label><br>                               
@@ -103,7 +103,7 @@
                 </span>
                 <br>
                 <span style="display:inline-block;">
-                    <input type="" id="num2" name="num2" style="width: 154px; background-color: lightgray; border-color: transparent;">
+                    <input type="" id="num2" name="num2" style="width: 154px; background-color: lightgray; border-color: transparent;" disabled>
                 </span>
                 <span>
                     <label for="rpmc"> Required Prereqs. (major, course): </label><br>
@@ -111,7 +111,7 @@
                 </span>
                 <br>
                 <span style="display:inline-block;">
-                    <input type="" id="num2" name="num2" style="width: 154px; background-color: lightgray; border-color: transparent;">
+                    <input type="" id="num2" name="num2" style="width: 154px; background-color: lightgray; border-color: transparent;" disabled>
                 </span>
                 <span>
                     <label for="rationale"> Recommended Prereqs.: </label><br>                               
@@ -170,8 +170,8 @@
                 </div>
             </div>
         </div>
-
-        <div style="display: inline-block; border-right: 1px solid lightslategrey; position: relative; top: -64px; padding: 12px 0 77px 8px;">
+        
+        <div style="display: inline-block; border-right: 1px solid whitesmoke; position: relative; top: -64px; padding: 12px 0 77px 8px;">
             <label>Keywords:</label><br>
             <div>
                 <div style="padding-top: 11px;">
@@ -208,42 +208,41 @@
                 </div>
             </div>
         </div>
-
-        <div style="border-top: 1px solid grey; position: relative; top: -67px; padding-top: 10px;">
-            <div style="display: inline-block; position: relative; top: -14px;">
-                <label>Approvals:</label>
+    </div>
+    <div style="border-top: 1px solid grey; position: relative; top: -67px; padding-top: 10px; width: 1003px;">
+        <div style="display: inline-block; position: relative; top: -14px;">
+            <label>Approvals:</label>
+            <div>
+                <div style="padding-top: 10px;">
+                    <input type="checkbox" id="fb" name="fb" value="Facebook">
+                    <span style="display: inline-block; width: 140px;"> CEP </span>
+                </div><br>
                 <div>
-                    <div style="padding-top: 10px;">
-                        <input type="checkbox" id="fb" name="fb" value="Facebook">
-                        <span style="display: inline-block; width: 140px;"> CEP </span>
-                    </div><br>
-                    <div>
-                        <input type="checkbox" id="fb" name="fb" value="Facebook">
-                        <span style="display: inline-block; width: 140px;"> Committe of Six </span>
-                    </div><br>
-                    <div>
-                        <input type="checkbox" id="fb" name="fb" value="Facebook">
-                        <span style="display: inline-block; width: 140px;"> Faculty </span>
-                    </div>
+                    <input type="checkbox" id="fb" name="fb" value="Facebook">
+                    <span style="display: inline-block; width: 140px;"> Committe of Six </span>
+                </div><br>
+                <div>
+                    <input type="checkbox" id="fb" name="fb" value="Facebook">
+                    <span style="display: inline-block; width: 140px;"> Faculty </span>
                 </div>
             </div>
-            
-            <div style="display: inline-block; position: relative; left: -27px; padding-right: 9px;">
-                <label>Date:</label><br>
-                <div style="background-color: #bdbdbd; width: 245px;">
-                    <div style="padding-top: 2px; border-bottom: 1px solid lightgray; border-top: 4px solid grey;"><div style="display: inline-block; padding: 10px 30px 5px 10px;"><img style="width: 20px; height: 20px;" src="./moveicon.png" alt=""></div><input type="text" id="rationale" name="rationale" style="width: 150px; padding-top: 10px;"></div>
-                    <div style="padding-top: 2px; border-bottom: 1px solid lightgray;"><div style="display: inline-block; padding: 10px 30px 5px 10px;"><img style="width: 20px; height: 20px;" src="./moveicon.png" alt=""></div><input type="text" id="rationale" name="rationale" style="width: 150px; padding-top: 10px;"></div>
-                    <div style="padding-top: 2px; padding-bottom: 2px; border-bottom: 1px solid lightgray;"><div style="display: inline-block; padding: 10px 30px 5px 10px;"><img style="width: 20px; height: 20px;" src="./moveicon.png" alt=""></div><input type="text" id="rationale" name="rationale" style="width: 150px; padding-top: 10px;"></div>
-                </div>
+        </div>
+        
+        <div style="display: inline-block; position: relative; left: -27px; padding-right: 9px;">
+            <label>Date:</label><br>
+            <div style="background-color: #bdbdbd; width: 245px;">
+                <div style="padding-top: 2px; border-bottom: 1px solid lightgray; border-top: 4px solid grey;"><div style="display: inline-block; padding: 10px 30px 5px 10px;"><img style="width: 20px; height: 20px;" src="./moveicon.png" alt=""></div><input type="text" id="rationale" name="rationale" style="width: 150px; padding-top: 10px;"></div>
+                <div style="padding-top: 2px; border-bottom: 1px solid lightgray;"><div style="display: inline-block; padding: 10px 30px 5px 10px;"><img style="width: 20px; height: 20px;" src="./moveicon.png" alt=""></div><input type="text" id="rationale" name="rationale" style="width: 150px; padding-top: 10px;"></div>
+                <div style="padding-top: 2px; padding-bottom: 2px; border-bottom: 1px solid lightgray;"><div style="display: inline-block; padding: 10px 30px 5px 10px;"><img style="width: 20px; height: 20px;" src="./moveicon.png" alt=""></div><input type="text" id="rationale" name="rationale" style="width: 150px; padding-top: 10px;"></div>
             </div>
-            
-            <div style="display: inline-block; position: relative; left: -27px;">
-                <label>Comment:</label><br>
-                <div style="background-color: #bdbdbd; width: 530px;">
-                    <div style="padding-top: 2px; border-bottom: 1px solid lightgray; border-top: 4px solid grey;"><div style="display: inline-block; padding: 10px 30px 5px 10px;"><img style="width: 20px; height: 20px;" src="./moveicon.png" alt=""></div><input type="text" id="rationale" name="rationale" style="width: 450px; padding-top: 10px;"></div>
-                    <div style="padding-top: 2px; border-bottom: 1px solid lightgray;"><div style="display: inline-block; padding: 10px 30px 5px 10px;"><img style="width: 20px; height: 20px;" src="./moveicon.png" alt=""></div><input type="text" id="rationale" name="rationale" style="width: 450px; padding-top: 10px;"></div>
-                    <div style="padding-top: 2px; padding-bottom: 2px; border-bottom: 1px solid lightgray;"><div style="display: inline-block; padding: 10px 30px 5px 10px;"><img style="width: 20px; height: 20px;" src="./moveicon.png" alt=""></div><input type="text" id="rationale" name="rationale" style="width: 450px; padding-top: 10px;"></div>
-                </div>
+        </div>
+        
+        <div style="display: inline-block; position: relative; left: -27px;">
+            <label>Comment:</label><br>
+            <div style="background-color: #bdbdbd; width: 530px;">
+                <div style="padding-top: 2px; border-bottom: 1px solid lightgray; border-top: 4px solid grey;"><div style="display: inline-block; padding: 10px 30px 5px 10px;"><img style="width: 20px; height: 20px;" src="./moveicon.png" alt=""></div><input type="text" id="rationale" name="rationale" style="width: 450px; padding-top: 10px;"></div>
+                <div style="padding-top: 2px; border-bottom: 1px solid lightgray;"><div style="display: inline-block; padding: 10px 30px 5px 10px;"><img style="width: 20px; height: 20px;" src="./moveicon.png" alt=""></div><input type="text" id="rationale" name="rationale" style="width: 450px; padding-top: 10px;"></div>
+                <div style="padding-top: 2px; padding-bottom: 2px; border-bottom: 1px solid lightgray;"><div style="display: inline-block; padding: 10px 30px 5px 10px;"><img style="width: 20px; height: 20px;" src="./moveicon.png" alt=""></div><input type="text" id="rationale" name="rationale" style="width: 450px; padding-top: 10px;"></div>
             </div>
         </div>
     </div>
