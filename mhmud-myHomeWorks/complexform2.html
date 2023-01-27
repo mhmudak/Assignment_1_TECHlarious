@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>TECHlarious | complexform2</title>
+</head>
+<body>
+    <div class="fullBorder" style="margin-bottom: 15px; padding: 5px 5px 5px 12px;">
+        <span>
+            <select style="border: 0; background-color: transparent;">
+                <option value="1">Record</option>
+                <option value="2">1</option>
+                <option value="3">2</option>
+                <option value="4">3</option>
+                <option value="4">4</option>
+            </select>
+        </span>
+        <span style="float: right;">
+            <label>View:</label>
+            <select>
+                <option value="1">Review Orders</option>
+                <option value="2">1</option>
+                <option value="3">2</option>
+                <option value="4">3</option>
+                <option value="4">4</option>
+            </select>
+        </span>
+    </div>
+    
+    <div style="margin-left:5px; margin-right: 5px; padding-bottom: 2px;">
+        <span>
+            <img src="./images/arrow-up.png" style="width: 20px; height: 20px; margin-right: 3px;" alt="">
+            <img src="./images/arrow-down.png" style="width: 20px; height: 20px;" alt="">
+            <span style="color: lightslategray; position: relative;top: -6px;left: 6px;">* - indicates a required field</span>
+        </span>
+        <span style="float: right;">
+            <input type="button" value="OK" style="width:91px;">
+            <input type="button" value="Delete" style="width:91px;">
+            <input type="button" value="Cancel" style="width:91px;">
+        </span>
+    </div>
+    <hr>
+    <div style="margin-left: 24px; padding-bottom: 12px;">
+        <table id="table_1" style="width: 100%;">
+            <tr>
+                <td>Customer:</td>
+                <td>
+                    <span class="search-field">
+                        <input type="text" placeholder="Bon app'" name="search" style="width:50%;">
+                        <button type="submit"  style="position: relative; top: -1px; margin-right: 3px;"><i class="fa fa-rocket"></i></button>
+                    </span>
+                    <span style="position: relative; top: 3px;"><img src="./images/image-file-upload.png" style="width: 20px; height: 20px; cursor: pointer;" alt="">&#160;</span>
+                </td>
+                <td></td>
+                <td>Address:</td>
+                <td><input type="text" style="text-align: end;" value="12, rue des Bouchers"></td>
+            </tr>
+            <tr>
+                <td>Employee:</td>
+                <td>
+                    <span class="search-field">
+                        <input type="text" placeholder="Peacock" name="search" style="width:47%;">
+                        <button type="submit"  style="position: relative; top: -1px; margin-right: 3px;"><i class="fa fa-rocket"></i></button>
+                    </span>
+                    <span style="position: relative; top: 3px;"><img src="./images/image-file-upload.png" style="width: 20px; height: 20px; cursor: pointer;" alt="">&#160;</span>
+                </td>
+                <td></td>
+                <td>City:</td>
+                <td><input type="text" style="text-align: end;" value="Marseille"></td>
+            </tr>
+            <tr>
+                <td>Order Date:</td>
+                <td><input type="date" name="" id="date1"></td>
+                <td></td>
+                <td>Region:</td>
+                <td><input type="text" style="text-align: end;" value=""></td>
+            </tr>
+            <tr>
+                <td><div style="width: 104px;">Required Date:</div></td>
+                <td><input type="date" name="" id="date2"></td>
+                <td></td>
+                <td>Postal Code:</td>
+                <td><input type="text" style="text-align: end;" value="13008"></td>
+            </tr>
+            <tr>
+                <td>Shipped Date:</td>
+                <td><input type="date" name="" id="date3"></td>
+                <td></td>
+                <td>Ship Country:</td>
+                <td><input type="text" style="text-align: end;" value="France"></td>
+            </tr>
+        </table>
+        <!-- <table class="table_1">
+            <tr>
+                <td>hello</td>
+                <td>hey</td>
+                <td>heyyy</td>
+                <td>hai</td>
+                <td>goo</td>
+            </tr>
+        </table> -->
+    </div>
+    
+    <div class="fullBorder" style="margin-left: 20px; margin-right: 10px;height: 312px;">
+        <div class="fullBorder" style="margin: 5px; padding: 5px 5px 5px 12px;">
+            <span style="position: relative; top: 3px;"><img src="./images/arrow-sort-down.png" style="width: 20px; height: 20px;" alt=""></span>
+            <span class="search-field">
+                <input type="text" placeholder="" name="search">
+                <button type="submit"><i class="fa fa-search" style="transform: scaleX(-1);"></i></button>
+            </span>
+            <span style="position: relative; top: 3px;"><img src="./images/image-file-upload.png" style="width: 20px; height: 20px; cursor: pointer;" alt="">&#160;</span>
+            <span><label style="margin-right: 30px;">New Order Details</label></span>
+            <span style="">
+                <select>
+                    <option value="1">Actions</option>
+                    <option value="2">1</option>
+                    <option value="3">2</option>
+                    <option value="4">3</option>
+                    <option value="4">4</option>
+                </select>
+            </span>
+        </div>
+        
+        <div>
+            <table id="table_2" style="width: 100%; padding: 5px 10px;">
+                <tr>
+                    <td id="pdname">Product Name</td>
+                    <td>Unit Price</td>
+                    <td>Quantity</td>
+                    <td>Discount</td>
+                    <td>Product Category Name</td>
+                    <td>Product Supplier Company Name</td>
+                    <td>Extended Price</td>
+                </tr>
+
+                <tr>
+                    <td><pre>Grandma's
+Boyseberry Spread</pre></td>
+                    <td>$25.00</td>
+                    <td>20</td>
+                    <td>25.00%</td>
+                    <td>Condiments</td>
+                    <td><pre>Grandma's
+Kelly's Homestead</pre></td>
+                    <td>$375.00</td>
+                </tr>
+                <tr>
+                    <td>Tofu</td>
+                    <td>$23.25</td>
+                    <td>20</td>
+                    <td>25.00%</td>
+                    <td>Produce</td>
+                    <td>Mayumi's</td>
+                    <td>$348.75</td>
+                </tr>
+                <tr>
+                    <td><pre>Teatime Chocolate
+Biscuits</pre></td>
+                    <td>$9.20</td>
+                    <td>10</td>
+                    <td>25.00%</td>
+                    <td>Confections</td>
+                    <td>Specialty Biscuits, Ltd.</td>
+                    <td>$69.00</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div style="position: relative;top: -22px;">
+            <hr style="border-width: 1px;border-style: dashed;border-color: lightslategray;margin-right: 8px;margin-left: 8px; margin-bottom: 5px;">
+
+            <div style="color:lightslategrey"><span style="position: relative;left: 163px;">Avg: $19.15 &#160;&#160;&#160;&#160;Sum: 50 &#160;&#160;&#160;&#160;&#160;Avg: 25.00%</span><span style="float: right; padding-right: 10px;">Sum: $792.75</span></div>
+        </div>
+    </div>
+    
+    <div style="margin-left: 20px; margin-right: 17px;">
+        <table id="table_3" style="width: 100%;">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Subtotal:</td>
+                <td>$792.75</td>
+            </tr>
+            <tr>
+                <td>Ship Name:</td>
+                <td><input type="text" value="Bon app'" style="width: 85%;"></td>
+                <td></td>
+                <td>Freight:</td>
+                <td><input type="text" value="$38.28" style="width: 44px;text-align: right;"></td>
+            </tr>
+            <tr>
+                <td>Ship Via:</td>
+                <td>
+                    <span">
+                        <select style="padding-right: 44px;">
+                            <option value="1">United Package</option>
+                            <option value="2">1</option>
+                            <option value="3">2</option>
+                            <option value="4">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </span>
+                </td>
+                <td></td>
+                <td>Total:</td>
+                <td>$831.03</td>
+            </tr>
+        </table>
+    </div>
+    <hr style="border-width: 2px;">
+    <div style="margin-left:5px; margin-right: 5px; padding-bottom: 2px;">
+        <span>
+            <img src="./images/arrow-up.png" style="width: 20px; height: 20px; margin-right: 3px;" alt="">
+            <img src="./images/arrow-down.png" style="width: 20px; height: 20px;" alt="">
+            <span style="color: lightslategray; position: relative;top: -6px;left: 6px;">* - indicates a required field</span>
+        </span>
+        <span style="float: right;">
+            <input type="button" value="OK" style="width:91px;">
+            <input type="button" value="Delete" style="width:91px;">
+            <input type="button" value="Cancel" style="width:91px;">
+        </span>
+    </div>
+    <script>
+        document.getElementById("date1").value = "1998-06-05";
+        document.getElementById("date2").value = "1998-06-03";
+    </script>
+</body>
+</html>
