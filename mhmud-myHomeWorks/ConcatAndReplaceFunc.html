@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/HomeWorkFunctions.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 style="text-decoration: underline ;">Concatination Function</h1>
+        <p><span id="salutation">Helloo</span> one <span id="demo">two</span> three</p>
+    </div>
+    
+    <div>
+        <h1 style="text-decoration: underline ;">Single Replace Function</h1>
+        <!-- Single replace -->
+        <h2 id="main"> The original sentence is "the first idea." after using the replace function: changing "idea" word to "rule" word:<div style="color:royalblue;">| The first <span id="changeable">idea</span>. | </h2>
+    </div>
+    
+    <div>
+        <h1 style="text-decoration: underline ;">All Replace Function</h1>
+        <!-- replace All -->
+        <h3 id="mainnn"> The first <span class="changeableee">idea</span> <span class="changeableee">idea</span>.</h3>
+        unfortunately, AllReplace doesn't work with me.
+    </div>
+    
+    <script>
+        // declaring test
+        const test = document.getElementById("salutation").innerHTML;
+        
+        // calling myConcat function
+        document.getElementById("demo").innerHTML = myConcat(1,test,3);
+        // end of concat
+        
+        // Single replace Funtion begin
+        text = document.getElementById("changeable").innerHTML;
+        newText = "rule";
+        sentence = document.getElementById("main").innerHTML;
+        
+        document.getElementById("changeable").innerHTML = myReplace(text,newText,sentence);
+        // end of Single replace Funtion
+        
+        
+        
+        // replace All Funtion begin
+        texttt = document.getElementsByClassName("changeableee").innerHTML;
+        newTexttt = "rule";
+        sentenceee = document.getElementById("mainnn").innerHTML;
+        
+        document.getElementsByClassName("changeableee")[0] = myReplace(texttt,newTexttt,sentenceee);
+        
+
+        // console.log(textt);
+        // console.log(newTextt);
+    </script>
+</body>
+</html>
